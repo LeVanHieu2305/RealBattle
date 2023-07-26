@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiusho</title>
+    <link rel="shortcut icon" href="./img/iconlogo (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/infome.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/checkmail.js"></script>
+    <script src="../assets/js/slidereview.js"></script>
+    <script src="../assets/js/changimg.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <!-- Navbar -->
+                <nav class="header__navbar">
+                    <div class="header__logo">
+                        <a href="../index.html" class="header__logo-link">
+                            <img src="./img/logo.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul class="header__navbar-list hide-on-mobile-tablet">
+                            <li class="header__navbar-item">
+                                <a href="../index.html" class="header__navbar-link">Trang chủ</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="../assets/category.html" class="header__navbar-link">Danh mục</a>
+                                <!-- <ul>
+                                    <li><a href="../assets/category.html">Nike</a></li>
+                                    <li><a href="../assets/category.html">Adidas</a></li>
+                                    <li><a href="../assets/category.html">Converser</a></li>
+                                    <li><a href="../assets/category.html">Sneakers</a></li>
+                                </ul> -->
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="../assets/collection.html" class="header__navbar-link">Bộ sưu tập</a>
+                                <div class="new__img">
+                                    <img src="../assets/img/new.png" alt="" class="header__navbar-link-new">
+                                </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="../assets/blog.html" class="header__navbar-link">Blog</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="../assets/contact.html" class="header__navbar-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__navbar-fonticon">
+                        <!-- search -->
+                        <li class="header__navbar-fonticon-list header__wrap">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+                                <label for="mobile-search-checkbox" class="header__search-label">
+                                    <i class="header__navbar-fonticon-icon ti-search"></i>
+                                    <!-- <span class="header__icon-notice">3</span> -->
+                                </label>
+
+                                <!-- No icon class = header__icon-list--no-icon -->
+                                <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="nav__input-search">
+                                <div class="header__search">
+                                    <div class="header__search-width">
+                                        <div class="header__search-input-wrap">
+                                            <i class="header__search-input-wrap-icon ti-search"></i>
+                                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                                        </div>
+                                        <label for="mobile-search-checkbox" class="header__search-close">
+                                            <i class="header__navbar-fonticon-icon ti-close"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                        </li>
+
+
+                        <li class="header__navbar-fonticon-list header__wrap">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+                                <a href="./assets/cart.html">
+                                    <i class="header__navbar-fonticon-icon ti-shopping-cart"></i>
+                                    <span class="header__icon-notice">3</span>
+                                </a>
+
+                                <!-- No icon class = header__icon-list--no-icon -->
+                                <div class="header__list">
+                                    <img src="assets/img/no-cart.png" alt="" class="header__icon-list--no-icon header__icon-no-icon-img">
+                                    <span class="header__icon-list--no-icon header__icon-list--no-icon-msg">Chưa có sản phẩm</span>
+
+                                    <!-- Have icon -->
+                                    <h4 class="header__icon-heading">Sản phẩm được thêm</h4>
+                                    <ul class="header__icon-list-items">
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/sanpham/Cart/cart1.jpg" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <div class="header__icon-item-head">
+                                                    <h5 class="header__icon-item-name">Nike Dunk</h5>
+                                                    <div class="header__icon-item-price-wrap">
+                                                        <span class="header__icon-item-price">đ 499.000</span>
+                                                        <span class="header__icon-item-multiply">x</span>
+                                                        <span class="header__icon-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__icon-item-body">
+                                                    <span class="header__icon-item-description">Phân loại: Nike</span>
+                                                    <span class="header__icon-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/sanpham/Cart/cart2.jpg" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <div class="header__icon-item-head">
+                                                    <h5 class="header__icon-item-name">Converse Chuck Taylor All Star</h5>
+                                                    <div class="header__icon-item-price-wrap">
+                                                        <span class="header__icon-item-price">đ 200.000</span>
+                                                        <span class="header__icon-item-multiply">x</span>
+                                                        <span class="header__icon-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__icon-item-body">
+                                                    <span class="header__icon-item-description">Phân loại: Converse</span>
+                                                    <span class="header__icon-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/sanpham/Cart/cart3.jpg" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <div class="header__icon-item-head">
+                                                    <h5 class="header__icon-item-name">Adidas White</h5>
+                                                    <div class="header__icon-item-price-wrap">
+                                                        <span class="header__icon-item-price">đ 459.000</span>
+                                                        <span class="header__icon-item-multiply">x</span>
+                                                        <span class="header__icon-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__icon-item-body">
+                                                    <span class="header__icon-item-description">Phân loại: Addias</span>
+                                                    <span class="header__icon-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="./cart.html" class="header__icon-view-icon btn btn--primary btn-color-white">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-fonticon-list header__wrap hide-on-mobile-tablet">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+                                <a href="">
+                                    <i class="header__navbar-fonticon-icon header__user-notice ti-user"></i>
+                                </a>
+                                <div class="header__list">
+                                    <button class="btn-signup btn--primary"><a href="./login.html">Đăng nhập</a></button>
+                                    <div class="fogot-reg">
+                                        <span class="fogot">Bạn không có tài khoản?</span>
+                                        <span class="reg">
+                                            <a href="./register.html" class="reg-link">Đăng ký</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Navbar Table - Mobile -->
+                        <li class="hide-on-pc header__navbar-fonticon-list header__wrap">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+
+                                <label for="nav-mobile-input" class="nav__bars-btn">
+                                        <i class="header__navbar-fonticon-icon fa-solid fa-bars"></i>
+                                </label>
+
+                                <input type="checkbox" hidden class="nav__input" name="" id="nav-mobile-input">
+
+                                <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                                <!-- Nav table - mobile -->
+                                <nav class="nav__table-mobile">
+                                    <div class="nav__table-mobile-user-close">
+                                        <div class="nav__table-mobile-user">
+                                            <div class="nav__table-mobile-avatar">
+                                                <img src="./img/avatar_user.jpg" alt="" class="nav__table-mobile-avatar-img">
+                                            </div>
+                                            <div class="nav__table-mobile-avatar-info">
+                                                <div class="nav__table-mobile-avatar-name">Le Van Hieu</div>
+                                                <div class="nav__table-mobile-avatar-mail">hieulv.2305@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <label for="nav-mobile-input" class="nav__table-mobile-close">
+                                            <i class="nav__table-mobile-close-icon fa-solid fa-xmark"></i>
+                                        </label>
+                                    </div>
+                                    <ul class="header__navbar-table-mobile-list">
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-house"></i>
+                                            <a href="index.html" class="header__navbartable-mobile-link">Home</a>
+                                        </li>
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-shirt"></i>
+                                            <a href="#newarrivals" class="header__navbartable-mobile-link">New Arrivals</a>
+                                            <div class="new__img">
+                                                <!-- <img src="../assets/img/new.png" alt="" class="header__navbar-link-new"> -->
+                                            </div>
+                                        </li>
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-user"></i>
+                                            <a href="./assets/login.html" class="header__navbartable-mobile-link">Account</a>
+                                        </li>
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-right-from-bracket"></i>
+                                            <a href="#" class="header__navbartable-mobile-link">Log out</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Banner -->
+                <!-- <div class="header__banner">
+                    <div class="row sm-gutter header__banner-align">
+                        <div class="col l-6 m-6 c-6">
+                            <h2 class="header__banner-heading">Bạn cần hỗ trợ ?</h2>
+                            <span class="header__banner-sub-heading">Hiusho rất hân hạnh được hỗ trợ bạn, hãy để lại thông tin cho chúng tôi nhé. Yêu cầu của bạn sẽ được xử lý và phản hồi trong thời gian sớm nhất.</span>
+                            <form action="">
+                                <div class="row sm-gutter">
+                                    <div class="col l-6">
+                                        <label for="" class="form__group-label">Họ và tên</label> <br>
+                                        <input type="text" class="form__group-input" placeholder="Tên đầy đủ của bạn">
+                                    </div>
+                                    <div class="col l-6">
+                                        <label for="" class="form__group-label">Email</label> <br>
+                                        <input type="text" class="form__group-input" placeholder="Địa chỉ email">
+                                    </div>
+                                    <div class="col l-12">
+                                        <label for="" class="form__group-label">Tin nhắn</label> <br>
+                                        <textarea name="" id="" cols="100" rows="7" class="form__group-input">Đừng ngại hỏi về đơn hàng của bạn...</textarea>
+                                    </div>
+                                    <button class="header__banner-btn btn--primary">Gửi</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col l-6 m-6 c-6">
+                            <img src="../assets/img/sanpham/bannercontact.png" alt="" class="header__banner-imgview">
+                        </div>
+
+                    </div>
+                </div> -->
+                </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="app__content">
+                    <div class="profile">
+                        <div class="row sm-gutter">
+                            <div class="col l-6">
+                                <div class="col l-12">
+                                    <div class="avatar">
+                                        <div class="avatar-image">
+                                            <img src="./img/avater.jpg" alt="" class="img-avatar">
+                                        </div>
+                                        <input type="file" class="input-file">
+                                    </div>
+                                </div>
+
+                                <div class="col l-12">
+                                    <label for="" class="form__group-label">Giới tính</label> <br>
+                                    <div class="genre">
+                                        <div class="input__radio">
+                                            <input type="radio" name="gener" id="" class="input__radio-input">
+                                            <span class="input__radio-text">Nam</span>
+                                        </div>
+
+                                        <div class="input__radio">
+                                            <input type="radio" name="gener" id="" class="input__radio-input">
+                                            <span class="input__radio-text">Nữ</span>
+                                        </div>
+
+                                        <div class="input__radio">
+                                            <input type="radio" name="gener" id="" class="input__radio-input">
+                                            <span class="input__radio-text">Khác</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l-12">
+                                    <label for="" class="form__group-label">Ngày sinh</label> <br>
+                                    <input type="date" name="gener" id="" class="form__group-input">
+                                </div>
+
+                                <div class="col l-12">
+                                    <label for="" class="form__group-label">Tên đăng nhập</label> <br>
+                                    <input type="text" class="form__group-input" value="hieulv23">
+                                </div>
+                            </div>
+
+                            <div class="col l-6">
+                                <div class="col l-12">
+                                    <label for="" class="form__group-label">Số điện thoại</label> <br>
+                                    <input type="text" class="form__group-input" value="0346728494">
+                                </div>
+
+                                <div class="col l-12">
+                                    <label for="" class="form__group-label">Email</label> <br>
+                                    <input type="text" class="form__group-input" value="hieulv23@gmail.com">
+                                </div>
+
+                                <div class="col l-12">
+                                    <label for="" class="form__group-label">Mật khẩu hiện tại</label> <br>
+                                    <input type="password" class="form__group-input" value="............">
+                                </div>
+
+                                <div class="col l-12">
+                                    <label for="" class="form__group-label">Mật khẩu mới</label> <br>
+                                    <input type="password" class="form__group-input">
+                                </div>
+                            </div>
+
+                            <div class="col l-6">
+                                <h2 class="profile-heading profile-heading--active">Đăng xuất</h2>
+                                <h2 class="profile-heading">Xóa tài khoản của tôi</h2>
+                            </div>
+
+                            <div class="col l-6">
+                                <button class="btn-save">Lưu thay đổi</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer__submails">
+                    <div class="row sm-gutter">
+                        <div class="col l-6 l-o-3 m-6 m-o-3 c-12">
+                            <img src="./img/mail.png" alt="" class="footer__submails-img">
+                            <h3 class="footer__submails-heading">Subscibe Newsletter</h3>
+                            <p class="footer__submails-sub-heading">Đăng ký email của chúng tôi và nhận thông tin cập nhật ngay trong hộp thư đến bạn</p>
+                            <div class="footer__submails-input">
+                                <input type="email" placeholder="Enter Your Email" class="input-text" id="email" required>
+                                <div class="input-submit" onclick="checkmail()" value="submit">
+                                    <img src="./img/send.png" alt="" class="footer__submails-input-img">
+                                </div>
+                            </div>
+                            <div id="toast">
+                                <!-- Success -->
+                                <!-- <div class="toast toast--success">
+                                        <div class="toast__icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <div class="toast__body">
+                                            <div class="toast__title">Success</div>
+                                            <div class="toast__mess">Font Awesome is hiring a product designer to help us take Shoelace to the next level.</div>
+                                        </div>
+                                        <div class="toast__close">
+                                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                                        </div>
+                                    </div> -->
+
+                                <!-- Error -->
+                                <!-- <div class="toast toast--error">
+                                        <div class="toast__icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <div class="toast__body">
+                                            <div class="toast__title">Error</div>
+                                            <div class="toast__mess">Font Awesome is hiring a product designer to help us take Shoelace.</div>
+                                        </div>
+                                        <div class="toast__close">
+                                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                                        </div>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__fonticon">
+                    <div class="row sm-gutter">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="footer__fonticon-all">
+                                <div class="footer__fonticon-icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="footer__fonticon-icon">
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                                <div class="footer__fonticon-icon">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <div class="row sm-gutter">
+                        <div class="col l-3 m-12 c-12">
+                            <div class="footer__logo">
+                                <a href="#" class="header__logo-link">
+                                    <img src="./img/logo.png" alt="" class="header__logo-img">
+                                </a>
+                            </div>
+                            <p class="footer__info-forme">Shop Giày HiuSho với phương châm "Đồng hành cùng phong cách thời trang của bạn" sẽ là nơi mua sắm an toàn và uy tín.</p>
+                        </div>
+
+                        <div class="col l-3 m-4 c-4">
+                            <h3 class="footer__info-heading">Giúp đỡ</h3>
+                            <p class="footer__info-sub-heading">Chính sách bảo mật</p>
+                            <p class="footer__info-sub-heading">Đang chuyển hàng</p>
+                            <p class="footer__info-sub-heading">Chính sách hoàn tiền</p>
+                            <p class="footer__info-sub-heading">Theo dõi đơn hàng của bạn</p>
+                        </div>
+
+                        <div class="col l-3 m-4 c-4">
+                            <h3 class="footer__info-heading">Cửa hàng</h3>
+                            <p class="footer__info-sub-heading">Sneakers</p>
+                            <p class="footer__info-sub-heading">Nike</p>
+                            <p class="footer__info-sub-heading">Addias</p>
+                            <p class="footer__info-sub-heading">Converse</p>
+                        </div>
+
+                        <div class="col l-3 m-4 c-4">
+                            <h3 class="footer__info-heading">Hỗ trợ</h3>
+                            <p class="footer__info-sub-heading">Phản hồi</p>
+                            <p class="footer__info-sub-heading">Liên hệ chúng tôi</p>
+                            <p class="footer__info-sub-heading">Tải xuống app</p>
+                            <p class="footer__info-sub-heading">Điều kiện</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            const image = document.querySelector("img");
+            const input = document.querySelector("input");
+
+            input.addEventListener("change", () => {
+                image.src = URL.createObjectURL(input.files[0]);
+            });
+        </script>
+</body>
+
+</html>
